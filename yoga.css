@@ -95,3 +95,55 @@ dl dd {
 dl dt {
     margin: 0.3em;
 }
+
+/* media queries */
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {...}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    #home {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+    }
+    #home .yoga-door {
+        grid-row-start: 1; 
+        grid-row-end: 4;
+        background-image: url(./yogadoor.jpg);
+        background-size: contain;
+        background-color: #3F2860;
+        color: white;
+        height: 100%;
+        } 
+    #home .yoga-door img{
+        display: none;
+    }
+    #home .yoga-door h2{
+        z-index: 1;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    #home .info {
+        grid-column: 2 / 4;
+    }
+    #home .list {
+        grid-column: 2 / 4;
+    }
+    #home .contact {
+        grid-column: 2 / 4;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {...}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {...}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {...} 
