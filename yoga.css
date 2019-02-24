@@ -1,15 +1,15 @@
 body {
     background-color: #3F2860;
     font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 #wrapper {
     background-color: #f5f5f5;
-    min-width: 1000px;
     max-width: 1280px;
-    width: 80%;
     margin-right: auto;
     margin-left: auto;
 }
+/* Header */
 header {
     background-color: #9bc1c2;
     background-image: url(/lilyheader.jpg);
@@ -17,9 +17,11 @@ header {
     background-position: right;
     height: 150px;
 }
-h1 {
+header h1 {
     padding: 50px 0 0 2em;
+    margin: 0;
 }
+/* Navigation */
 nav {
     text-align: center;
     font-weight: bold;
@@ -27,6 +29,40 @@ nav {
 }
 nav a{
     text-decoration: none;
+}
+/* main */
+main {
+    padding: 0 1em;
+}
+img {
+    padding: 0 1em;
+    max-width: 100%;
+}
+.yoga-door {
+    background-color: #3F2860;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    height: 250px;
+    position: relative;
+}
+.yoga-door img {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.yoga-door h2 {
+    z-index: 1;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+    text-align: right;
+}
+.list {
+    padding-left: 15px;
 }
 .studio {
     font-style: italic;
@@ -38,13 +74,8 @@ footer {
     text-align: center;
     padding: 1em;
 }
-main {
-    padding: 0 2em;
-    display: block;
-}
-img {
-    padding: 0 1em;
-}
+
+
 #hero {
     text-align: center;
 }
