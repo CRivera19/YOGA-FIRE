@@ -67,6 +67,7 @@ img {
 .studio {
     font-style: italic;
 }
+/* Footer  */
 footer {
     background-color: #9bc1c2;
     font-size: .60em;
@@ -75,7 +76,19 @@ footer {
     padding: 1em;
 }
 
-
+/* Classes.html */
 #hero {
     text-align: center;
+}
+#hero img {
+    padding: 0;
+}
+#classes h2 {
+    margin: 0.5em 0;
+}
+dl dd {
+    margin-left: 15px;
+}
+dl dt {
+    margin: 0.3em;
 }
